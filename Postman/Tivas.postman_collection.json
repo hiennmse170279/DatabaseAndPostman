@@ -1,0 +1,751 @@
+{
+	"info": {
+		"_postman_id": "6d1f7398-8829-439f-9e1d-f393fa027f62",
+		"name": "Tivas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "29868473"
+	},
+	"item": [
+		{
+			"name": "Project",
+			"item": [
+				{
+					"name": "CREATE_NEW_PROJECT",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "thumbnail",
+									"type": "file",
+									"src": "/C:/Users/Admin/OneDrive/Pictures/Ảnh chụp màn hình/Screenshot 2023-03-07 233528.png"
+								},
+								{
+									"key": "images",
+									"type": "file",
+									"src": [
+										"/C:/Users/Admin/OneDrive/Pictures/Ảnh chụp màn hình/Screenshot 2023-03-07 233528.png",
+										"/C:/Users/Admin/OneDrive/Pictures/Ảnh chụp màn hình/Screenshot 2023-03-07 233531.png"
+									]
+								},
+								{
+									"key": "name",
+									"value": "Resort",
+									"description": "a string (not null)",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "Hotel",
+									"description": "a string (not null)",
+									"type": "text"
+								},
+								{
+									"key": "buildingStatus",
+									"value": "1",
+									"description": "a number (1, 2, 3) (not null)",
+									"type": "text"
+								},
+								{
+									"key": "location",
+									"value": "Vietnam",
+									"description": "a string",
+									"type": "text"
+								},
+								{
+									"key": "type",
+									"value": "Hotel",
+									"description": "(Villa, Hotel or Villa,Hotel)",
+									"type": "text"
+								}
+							]
+						},
+						"url": "{{server}}/api/v1/project/create"
+					},
+					"response": []
+				},
+				{
+					"name": "SEARCH_PROJECT",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{server}}/api/v1/project/search?buildingStatus=1&type=Hotel,Villa",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"project",
+								"search"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1",
+									"description": "a number (default: 1)",
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": "10",
+									"description": "a number (default: 5)",
+									"disabled": true
+								},
+								{
+									"key": "orderType",
+									"value": "DESC",
+									"description": "ASC, DESC (default: ASC)",
+									"disabled": true
+								},
+								{
+									"key": "orderBy",
+									"value": "createdAt",
+									"description": "name, description, buildingStatus, destination (default: id)",
+									"disabled": true
+								},
+								{
+									"key": "id",
+									"value": "1",
+									"description": "a number",
+									"disabled": true
+								},
+								{
+									"key": "name",
+									"value": "",
+									"description": "a string",
+									"disabled": true
+								},
+								{
+									"key": "buildingStatus",
+									"value": "1",
+									"description": "a number (1, 2, 3)"
+								},
+								{
+									"key": "location",
+									"value": "",
+									"description": "a string",
+									"disabled": true
+								},
+								{
+									"key": "type",
+									"value": "Hotel,Villa",
+									"description": "Hotel, Villa, (Hotel,Villa)"
+								},
+								{
+									"key": "description",
+									"value": "",
+									"description": "a string",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET_TOP10_PROJECT",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": "{{server}}/api/v1/project/top10"
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE_PROJECT",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Content-Type",
+								"value": "application/json",
+								"type": "text"
+							}
+						],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "thumbnail",
+									"type": "file",
+									"src": []
+								},
+								{
+									"key": "images",
+									"type": "file",
+									"src": []
+								},
+								{
+									"key": "name",
+									"value": "1",
+									"description": "a string (not null)",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "2",
+									"description": "a string (not null)",
+									"type": "text"
+								},
+								{
+									"key": "buildingStatus",
+									"value": "3",
+									"description": "a number (1, 2, 3) (not null)",
+									"type": "text"
+								},
+								{
+									"key": "destination",
+									"value": "4",
+									"description": "a string (not null)",
+									"type": "text"
+								},
+								{
+									"key": "imagesDeleted",
+									"value": "38,39",
+									"description": "a string (an array of imageID)",
+									"type": "text"
+								},
+								{
+									"key": "thumbnailDeleted",
+									"value": "1",
+									"description": "1 to delete thumbnail",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{server}}/api/v1/project/update/:id",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"project",
+								"update",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "17"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE_PROJECT",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "{{server}}/api/v1/project/delete/:id",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"project",
+								"delete",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "17"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET_ALL_PROJECT",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{server}}/api/v1/project/getAll?page=1&limit=10&orderType=ASC",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"project",
+								"getAll"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1",
+									"description": "a number (default: 1)"
+								},
+								{
+									"key": "limit",
+									"value": "10",
+									"description": "a number (default: 5)"
+								},
+								{
+									"key": "orderType",
+									"value": "ASC",
+									"description": "ASC, DESC (default: ASC)"
+								},
+								{
+									"key": "orderBy",
+									"value": "name",
+									"description": "name, description, buildingStatus, destination (default: id)",
+									"disabled": true
+								},
+								{
+									"key": "model",
+									"value": "",
+									"disabled": true
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET_DETAILS_PROJECT",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "",
+									"type": "file",
+									"src": []
+								}
+							]
+						},
+						"url": {
+							"raw": "{{server}}/api/v1/project/:id",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"project",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "10",
+									"description": "a number"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Room",
+			"item": [
+				{
+					"name": "Test",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "images",
+									"type": "file",
+									"src": [
+										"/E:/FPT/Semester 5/SWP391/FE/FE(Retake)/Fall2023SWP391_NET1714_GROUPLAPLANH/src/assets/images/Chords/Rectangle 18.png",
+										"/E:/FPT/Semester 5/SWP391/FE/FE(Retake)/Fall2023SWP391_NET1714_GROUPLAPLANH/src/assets/images/Chords/Rectangle 19.png",
+										"/E:/FPT/Semester 5/SWP391/FE/FE(Retake)/Fall2023SWP391_NET1714_GROUPLAPLANH/src/assets/images/Chords/Rectangle 23.png"
+									]
+								}
+							]
+						},
+						"url": "{{client}}/api/v1/room/test"
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "TypeRoom",
+			"item": [
+				{
+					"name": "CREATE_NEW_TYPEROOM",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "images",
+									"type": "file",
+									"src": [
+										"/C:/Users/Admin/OneDrive/Pictures/Ảnh chụp màn hình/Screenshot 2023-03-07 233528.png",
+										"/C:/Users/Admin/OneDrive/Pictures/Ảnh chụp màn hình/Screenshot 2023-03-07 233531.png",
+										"/C:/Users/Admin/OneDrive/Pictures/Ảnh chụp màn hình/Screenshot 2023-03-07 233542.png"
+									]
+								},
+								{
+									"key": "name",
+									"value": "Studio King",
+									"description": "a string (not be null)",
+									"type": "text"
+								},
+								{
+									"key": "bedrooms",
+									"value": "1",
+									"description": "a number (not be null)",
+									"type": "text"
+								},
+								{
+									"key": "persons",
+									"value": "4",
+									"description": "a number (not be null)",
+									"type": "text"
+								},
+								{
+									"key": "kitchen",
+									"value": "Coffee maker,Microwave,Refrigerator (small)",
+									"description": "a string",
+									"type": "text"
+								},
+								{
+									"key": "entertainment",
+									"value": "Internet access,Radio or music player,Telephone,TV",
+									"description": "a string",
+									"type": "text"
+								},
+								{
+									"key": "features",
+									"value": "Air conditioning,Patio or balcony",
+									"description": "a string",
+									"type": "text"
+								},
+								{
+									"key": "policies",
+									"value": "No smoking",
+									"description": "a string",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "This studio guest room features a king bed, sleeper sofa, and a partial kitchen.",
+									"description": "a string (not be null)",
+									"type": "text"
+								},
+								{
+									"key": "type",
+									"value": "Hotel",
+									"description": "a string (not be null)",
+									"type": "text"
+								},
+								{
+									"key": "quantity",
+									"value": "5",
+									"type": "text"
+								}
+							]
+						},
+						"url": {
+							"raw": "{{server}}/api/v1/typeroom/create/:projectID",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"typeroom",
+								"create",
+								":projectID"
+							],
+							"variable": [
+								{
+									"key": "projectID",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "UPDATE_TYPEROOM",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "formdata",
+							"formdata": [
+								{
+									"key": "images",
+									"type": "file",
+									"src": [
+										"/C:/Users/Admin/OneDrive/Pictures/Ảnh chụp màn hình/Screenshot 2023-03-07 012515.png",
+										"/C:/Users/Admin/OneDrive/Pictures/Ảnh chụp màn hình/Screenshot 2023-03-07 012520.png",
+										"/C:/Users/Admin/OneDrive/Pictures/Ảnh chụp màn hình/Screenshot 2023-03-07 012531.png"
+									]
+								},
+								{
+									"key": "name",
+									"value": "Studio King\n",
+									"description": "a string (not be null)",
+									"type": "text"
+								},
+								{
+									"key": "bedrooms",
+									"value": "2",
+									"description": "a number (not be null)",
+									"type": "text"
+								},
+								{
+									"key": "persons",
+									"value": "1",
+									"description": "a number (not be null)",
+									"type": "text"
+								},
+								{
+									"key": "kitchen",
+									"value": "",
+									"description": "a string",
+									"type": "text"
+								},
+								{
+									"key": "entertainment",
+									"value": "",
+									"description": "a string",
+									"type": "text"
+								},
+								{
+									"key": "features",
+									"value": "",
+									"description": "a string",
+									"type": "text"
+								},
+								{
+									"key": "policies",
+									"value": "",
+									"description": "a string",
+									"type": "text"
+								},
+								{
+									"key": "description",
+									"value": "1",
+									"description": "a string (not be null)",
+									"type": "text"
+								},
+								{
+									"key": "imagesDeleted",
+									"value": "13,14,15",
+									"description": "a string (an array of imageID)",
+									"type": "text",
+									"disabled": true
+								},
+								{
+									"key": "thumbnailDeleted",
+									"value": "1",
+									"description": "1 to delete thumbnail",
+									"type": "text",
+									"disabled": true
+								}
+							]
+						},
+						"url": {
+							"raw": "{{server}}/api/v1/typeroom/update/:id",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"typeroom",
+								"update",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "9"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "DELETE_TYPEROOM",
+					"request": {
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "{{server}}/api/v1/typeroom/delete/:id",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"typeroom",
+								"delete",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "10"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET_ALL_TYPEROOM",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{server}}/api/v1/typeroom/getAll/:projectID?page&limit&orderBy&orderType",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"typeroom",
+								"getAll",
+								":projectID"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": null
+								},
+								{
+									"key": "limit",
+									"value": null
+								},
+								{
+									"key": "orderBy",
+									"value": null
+								},
+								{
+									"key": "orderType",
+									"value": null
+								}
+							],
+							"variable": [
+								{
+									"key": "projectID",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET_DETAILS_TYPEROOM",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{server}}/api/v1/typeroom/:id",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"typeroom",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "3"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "TimeShare",
+			"item": [
+				{
+					"name": "CREATE_NEW_TIMESHARE",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"price\": 2,\r\n    \"startDate\": \"15/2/2024\",\r\n    \"endDate\": \"27/2/2024\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{server}}/api/v1/timeshare/create/:typeRoomID/:userID",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"timeshare",
+								"create",
+								":typeRoomID",
+								":userID"
+							],
+							"variable": [
+								{
+									"key": "typeRoomID",
+									"value": "7"
+								},
+								{
+									"key": "userID",
+									"value": "1"
+								}
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		}
+	]
+}
