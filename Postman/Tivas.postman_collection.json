@@ -20,17 +20,17 @@
 								{
 									"key": "thumbnail",
 									"type": "file",
-									"src": "/E:/FPT/Semester 5/SWP391(Retake)/Test/images/ProjectCreate/Thumbnail.jpg"
+									"src": "/C:/Users/PC/Documents/SWP391(Retake)/DatabaseAndPostman/DatabaseAndPostman/images/ProjectCreate/Thumbnail.jpg"
 								},
 								{
 									"key": "images",
 									"type": "file",
 									"src": [
-										"/E:/FPT/Semester 5/SWP391(Retake)/Test/images/ProjectCreate/37342468.jpg",
-										"/E:/FPT/Semester 5/SWP391(Retake)/Test/images/ProjectCreate/413930102.jpg",
-										"/E:/FPT/Semester 5/SWP391(Retake)/Test/images/ProjectCreate/416972090.jpg",
-										"/E:/FPT/Semester 5/SWP391(Retake)/Test/images/ProjectCreate/490874363.jpg",
-										"/E:/FPT/Semester 5/SWP391(Retake)/Test/images/ProjectCreate/490874372.jpg"
+										"/C:/Users/PC/Documents/SWP391(Retake)/DatabaseAndPostman/DatabaseAndPostman/images/ProjectCreate/37342468.jpg",
+										"/C:/Users/PC/Documents/SWP391(Retake)/DatabaseAndPostman/DatabaseAndPostman/images/ProjectCreate/413930102.jpg",
+										"/C:/Users/PC/Documents/SWP391(Retake)/DatabaseAndPostman/DatabaseAndPostman/images/ProjectCreate/416972090.jpg",
+										"/C:/Users/PC/Documents/SWP391(Retake)/DatabaseAndPostman/DatabaseAndPostman/images/ProjectCreate/490874363.jpg",
+										"/C:/Users/PC/Documents/SWP391(Retake)/DatabaseAndPostman/DatabaseAndPostman/images/ProjectCreate/490874372.jpg"
 									]
 								},
 								{
@@ -47,7 +47,7 @@
 								},
 								{
 									"key": "buildingStatus",
-									"value": "abc",
+									"value": "1",
 									"description": "a number (1, 2, 3) (not null)",
 									"type": "text"
 								},
@@ -206,22 +206,22 @@
 								{
 									"key": "thumbnail",
 									"type": "file",
-									"src": "/E:/FPT/Semester 5/SWP391(Retake)/Test/images/Project10/Thumbnail.jpg"
+									"src": "/C:/Users/PC/Pictures/Screenshot 2023-11-09 142943.png",
+									"disabled": true
 								},
 								{
 									"key": "images",
 									"type": "file",
 									"src": [
-										"/E:/FPT/Semester 5/SWP391(Retake)/Test/images/Project10/173539102.jpg",
-										"/E:/FPT/Semester 5/SWP391(Retake)/Test/images/Project10/173557996.jpg",
-										"/E:/FPT/Semester 5/SWP391(Retake)/Test/images/Project10/256389118.jpg",
-										"/E:/FPT/Semester 5/SWP391(Retake)/Test/images/Project10/256389122.jpg",
-										"/E:/FPT/Semester 5/SWP391(Retake)/Test/images/Project10/256389133.jpg"
-									]
+										"/C:/Users/PC/Pictures/Screenshot 2023-11-09 142943.png",
+										"/C:/Users/PC/Pictures/Screenshot 2023-11-09 143057.png",
+										"/C:/Users/PC/Pictures/Screenshot 2023-11-09 143644.png"
+									],
+									"disabled": true
 								},
 								{
 									"key": "name",
-									"value": "1",
+									"value": "Vinpearl Resort Nha Trang 123",
 									"description": "a string (not null)",
 									"type": "text"
 								},
@@ -297,7 +297,7 @@
 							"variable": [
 								{
 									"key": "id",
-									"value": "1"
+									"value": "13"
 								}
 							]
 						}
@@ -324,7 +324,7 @@
 							"variable": [
 								{
 									"key": "id",
-									"value": "11"
+									"value": "12"
 								}
 							]
 						}
@@ -337,7 +337,7 @@
 						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{server}}/api/v1/project/getAll?page=1&limit=10&orderType=ASC",
+							"raw": "{{server}}/api/v1/project/getAll?page=1&limit=10&orderType=DESC&orderBy=updatedAt",
 							"host": [
 								"{{server}}"
 							],
@@ -360,14 +360,13 @@
 								},
 								{
 									"key": "orderType",
-									"value": "ASC",
+									"value": "DESC",
 									"description": "ASC, DESC (default: ASC)"
 								},
 								{
 									"key": "orderBy",
-									"value": "name",
-									"description": "name, description, buildingStatus, destination (default: id)",
-									"disabled": true
+									"value": "updatedAt",
+									"description": "name, description, buildingStatus, destination (default: id)"
 								},
 								{
 									"key": "model",
@@ -436,16 +435,16 @@
 									"key": "images",
 									"type": "file",
 									"src": [
-										"/E:/FPT/Semester 5/SWP391(Retake)/Test/images/ProjectCreate/Three Bedroom Villa Ocean View - Private Pool/107678833.jpg",
-										"/E:/FPT/Semester 5/SWP391(Retake)/Test/images/ProjectCreate/Three Bedroom Villa Ocean View - Private Pool/107679362.jpg",
-										"/E:/FPT/Semester 5/SWP391(Retake)/Test/images/ProjectCreate/Three Bedroom Villa Ocean View - Private Pool/406735506.jpg",
-										"/E:/FPT/Semester 5/SWP391(Retake)/Test/images/ProjectCreate/Three Bedroom Villa Ocean View - Private Pool/406735508.jpg",
-										"/E:/FPT/Semester 5/SWP391(Retake)/Test/images/ProjectCreate/Three Bedroom Villa Ocean View - Private Pool/406735509.jpg"
+										"/C:/Users/PC/Documents/SWP391(Retake)/DatabaseAndPostman/DatabaseAndPostman/images/ProjectCreate/Three Bedroom Villa Ocean View - Private Pool/107678833.jpg",
+										"/C:/Users/PC/Documents/SWP391(Retake)/DatabaseAndPostman/DatabaseAndPostman/images/ProjectCreate/Three Bedroom Villa Ocean View - Private Pool/107679362.jpg",
+										"/C:/Users/PC/Documents/SWP391(Retake)/DatabaseAndPostman/DatabaseAndPostman/images/ProjectCreate/Three Bedroom Villa Ocean View - Private Pool/406735506.jpg",
+										"/C:/Users/PC/Documents/SWP391(Retake)/DatabaseAndPostman/DatabaseAndPostman/images/ProjectCreate/Three Bedroom Villa Ocean View - Private Pool/406735508.jpg",
+										"/C:/Users/PC/Documents/SWP391(Retake)/DatabaseAndPostman/DatabaseAndPostman/images/ProjectCreate/Three Bedroom Villa Ocean View - Private Pool/406735509.jpg"
 									]
 								},
 								{
 									"key": "name",
-									"value": "Three Bedroom Villa Ocean View - Private Pool",
+									"value": "Three Bedroom Villa Ocean View - Private Pool123",
 									"description": "a string (not be null)",
 									"type": "text"
 								},
@@ -514,7 +513,7 @@
 							"variable": [
 								{
 									"key": "projectID",
-									"value": "11"
+									"value": "13"
 								}
 							]
 						}
@@ -533,15 +532,16 @@
 									"key": "images",
 									"type": "file",
 									"src": [
-										"/C:/Users/Admin/OneDrive/Pictures/Ảnh chụp màn hình/Screenshot 2023-03-07 012515.png",
-										"/C:/Users/Admin/OneDrive/Pictures/Ảnh chụp màn hình/Screenshot 2023-03-07 012520.png",
-										"/C:/Users/Admin/OneDrive/Pictures/Ảnh chụp màn hình/Screenshot 2023-03-07 012531.png"
-									],
-									"disabled": true
+										"/C:/Users/PC/Documents/SWP391(Retake)/DatabaseAndPostman/DatabaseAndPostman/images/Project10/Ocean View Pool Pavilion 3 Bedrooms Ground Floor/249843251.jpg",
+										"/C:/Users/PC/Documents/SWP391(Retake)/DatabaseAndPostman/DatabaseAndPostman/images/Project10/Ocean View Pool Pavilion 3 Bedrooms Ground Floor/265515544.jpg",
+										"/C:/Users/PC/Documents/SWP391(Retake)/DatabaseAndPostman/DatabaseAndPostman/images/Project10/Ocean View Pool Pavilion 3 Bedrooms Ground Floor/265515554.jpg",
+										"/C:/Users/PC/Documents/SWP391(Retake)/DatabaseAndPostman/DatabaseAndPostman/images/Project10/Ocean View Pool Pavilion 3 Bedrooms Ground Floor/265515566.jpg",
+										"/C:/Users/PC/Documents/SWP391(Retake)/DatabaseAndPostman/DatabaseAndPostman/images/Project10/Ocean View Pool Pavilion 3 Bedrooms Ground Floor/265515568.jpg"
+									]
 								},
 								{
 									"key": "name",
-									"value": "Superior Bungalow Double Room with Terrace - Garden View",
+									"value": "Ocean Front Pool Pavilion 3 Bedrooms Ground Floor",
 									"description": "a string (not be null)",
 									"type": "text"
 								},
@@ -549,37 +549,43 @@
 									"key": "bedrooms",
 									"value": "1",
 									"description": "a number (not be null)",
-									"type": "text"
+									"type": "text",
+									"disabled": true
 								},
 								{
 									"key": "persons",
 									"value": "2",
 									"description": "a number (not be null)",
-									"type": "text"
+									"type": "text",
+									"disabled": true
 								},
 								{
 									"key": "size",
 									"value": "24",
 									"description": "a number (not be null)",
-									"type": "text"
+									"type": "text",
+									"disabled": true
 								},
 								{
 									"key": "bedTypes",
 									"value": "1 extra-large double bed or 2 single beds",
 									"description": "a string (not be null)",
-									"type": "text"
+									"type": "text",
+									"disabled": true
 								},
 								{
 									"key": "amenities",
 									"value": "Flat-screen TV,Air conditioning,Electric kettle",
 									"description": "a string",
-									"type": "text"
+									"type": "text",
+									"disabled": true
 								},
 								{
 									"key": "description",
 									"value": "This air-conditioned double room includes a flat-screen TV with cable channels, a private bathroom as well as a balcony with garden views. The unit offers 1 bed",
 									"description": "a string (not be null)",
-									"type": "text"
+									"type": "text",
+									"disabled": true
 								},
 								{
 									"key": "imagesDeleted",
@@ -612,7 +618,7 @@
 							"variable": [
 								{
 									"key": "id",
-									"value": "1"
+									"value": "6"
 								}
 							]
 						}
@@ -643,7 +649,7 @@
 							"variable": [
 								{
 									"key": "id",
-									"value": "7"
+									"value": "15"
 								}
 							]
 						}
@@ -688,7 +694,7 @@
 							"variable": [
 								{
 									"key": "projectID",
-									"value": "1"
+									"value": "11"
 								}
 							]
 						}
@@ -714,7 +720,7 @@
 							"variable": [
 								{
 									"key": "id",
-									"value": "3"
+									"value": "1"
 								}
 							]
 						}
@@ -733,7 +739,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"price\": 200000000,\r\n    \"startDate\": \"15/3/2024\",\r\n    \"endDate\": \"22/3/2024\"\r\n}",
+							"raw": "{\r\n    \"price\": 70000000,\r\n    \"startDate\": \"18/6/2024\",\r\n    \"endDate\": \"25/6/2024\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -760,10 +766,151 @@
 								},
 								{
 									"key": "userID",
-									"value": "1"
+									"value": "2"
 								}
 							]
 						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET_ALL_TIMESHARE",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{server}}/api/v1/timeshare/getAll?page=1&limit=20&orderBy=startDate&orderType=DESC",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"timeshare",
+								"getAll"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": "1"
+								},
+								{
+									"key": "limit",
+									"value": "20"
+								},
+								{
+									"key": "orderBy",
+									"value": "startDate"
+								},
+								{
+									"key": "orderType",
+									"value": "DESC"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET_ALL_TIMESHARE_OF_PROJECT",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{server}}/api/v1/timeshare/getAll/:projectID",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"timeshare",
+								"getAll",
+								":projectID"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "orderBy",
+									"value": "startDate",
+									"disabled": true
+								},
+								{
+									"key": "orderType",
+									"value": "DESC",
+									"disabled": true
+								}
+							],
+							"variable": [
+								{
+									"key": "projectID",
+									"value": ""
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET_DETAILS_TIMESHARE",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{server}}/api/v1/timeshare/:id",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"timeshare",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "6"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET_DETAILS_TIMESHARE_BY_STAFF",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "GET_ALL_TIMESHARE_BY_STAFF",
+					"request": {
+						"method": "GET",
+						"header": []
 					},
 					"response": []
 				}
