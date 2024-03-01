@@ -1,0 +1,11 @@
+INSERT INTO `timeshares` (`id`, `price`, `startDate`, `endDate`, `saleStatus`, `quantity`, `typeRoomID`, `userID`, `createdAt`, `updatedAt`) VALUES
+(1, 45000000, '2024-06-05 00:00:00', '2024-06-12 00:00:00', 0, 5, 1, 2, '2024-03-01 14:25:03', '2024-03-01 14:25:03');
+INSERT INTO `timeshares` (`id`, `price`, `startDate`, `endDate`, `saleStatus`, `quantity`, `typeRoomID`, `userID`, `createdAt`, `updatedAt`) VALUES
+(2, 50000000, '2024-06-05 00:00:00', '2024-06-12 00:00:00', 0, 5, 2, 2, '2024-03-01 14:25:06', '2024-03-01 14:25:06');
+INSERT INTO `timeshares` (`id`, `price`, `startDate`, `endDate`, `saleStatus`, `quantity`, `typeRoomID`, `userID`, `createdAt`, `updatedAt`) VALUES
+(3, 80000000, '2024-06-05 00:00:00', '2024-06-12 00:00:00', 0, 5, 3, 2, '2024-03-01 14:25:09', '2024-03-01 14:25:09');
+INSERT INTO `timeshares` (`id`, `price`, `startDate`, `endDate`, `saleStatus`, `quantity`, `typeRoomID`, `userID`, `createdAt`, `updatedAt`) VALUES
+(4, 55000000, '2024-06-05 00:00:00', '2024-06-12 00:00:00', 0, 5, 4, 4, '2024-03-01 14:25:14', '2024-03-01 14:25:14'),
+(5, 90000000, '2024-06-05 00:00:00', '2024-06-12 00:00:00', 0, 5, 5, 4, '2024-03-01 14:25:17', '2024-03-01 14:25:17'),
+(6, 100000000, '2024-06-05 00:00:00', '2024-06-12 00:00:00', 0, 5, 6, 4, '2024-03-01 14:25:19', '2024-03-01 14:25:19'),
+(7, 40000000, '2024-06-15 00:00:00', '2024-06-22 00:00:00', 0, 5, 1, 2, '2024-03-01 14:26:05', '2024-03-01 14:26:05');
