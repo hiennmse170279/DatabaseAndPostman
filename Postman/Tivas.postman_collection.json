@@ -86,6 +86,11 @@
 									"value": "20/3/2024",
 									"description": "a date",
 									"type": "text"
+								},
+								{
+									"key": "reservationDate",
+									"value": "20/3/2024",
+									"type": "text"
 								}
 							]
 						},
@@ -106,7 +111,7 @@
 							"raw": ""
 						},
 						"url": {
-							"raw": "{{server}}/api/v1/project/search?buildingStatus=1&type=Hotel,Villa",
+							"raw": "{{server}}/api/v1/project/search?name=",
 							"host": [
 								"{{server}}"
 							],
@@ -148,32 +153,32 @@
 									"disabled": true
 								},
 								{
-									"key": "name",
-									"value": "",
-									"description": "a string",
+									"key": "buildingStatus",
+									"value": "1",
+									"description": "a number (1, 2, 3)",
 									"disabled": true
 								},
 								{
-									"key": "buildingStatus",
-									"value": "1",
-									"description": "a number (1, 2, 3)"
-								},
-								{
 									"key": "location",
-									"value": "",
+									"value": "Ben Tre",
 									"description": "a string",
 									"disabled": true
 								},
 								{
 									"key": "type",
-									"value": "Hotel,Villa",
-									"description": "Hotel, Villa, (Hotel,Villa)"
+									"value": "Hotel",
+									"description": "Hotel, Villa, (Hotel,Villa)",
+									"disabled": true
 								},
 								{
 									"key": "description",
 									"value": "",
 									"description": "a string",
 									"disabled": true
+								},
+								{
+									"key": "name",
+									"value": ""
 								}
 							]
 						}
@@ -279,6 +284,11 @@
 									"value": "20/3/2024",
 									"description": "a date",
 									"type": "text"
+								},
+								{
+									"key": "reservationDate",
+									"value": "20/3/2024",
+									"type": "text"
 								}
 							]
 						},
@@ -297,7 +307,7 @@
 							"variable": [
 								{
 									"key": "id",
-									"value": "13"
+									"value": "11"
 								}
 							]
 						}
@@ -410,8 +420,62 @@
 							"variable": [
 								{
 									"key": "id",
-									"value": "11",
+									"value": "9",
 									"description": "a number"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "SEARCH_NAME_AND_LOCATION_PROJECT",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{server}}/api/v1/project/searchNameAndLocationProject/:info/:limit",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"project",
+								"searchNameAndLocationProject",
+								":info",
+								":limit"
+							],
+							"query": [
+								{
+									"key": "page",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "limit",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "orderBy",
+									"value": null,
+									"disabled": true
+								},
+								{
+									"key": "orderType",
+									"value": null,
+									"disabled": true
+								}
+							],
+							"variable": [
+								{
+									"key": "info",
+									"value": "e"
+								},
+								{
+									"key": "limit",
+									"value": "5"
 								}
 							]
 						}
@@ -740,7 +804,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"price\": 70000000,\r\n    \"startDate\": \"18/6/2024\",\r\n    \"endDate\": \"25/6/2024\"\r\n}",
+							"raw": "{\r\n    \"price\": 70000000,\r\n    \"startDate\": \"15/6/2024\",\r\n    \"endDate\": \"22/6/2024\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -763,7 +827,7 @@
 							"variable": [
 								{
 									"key": "typeRoomID",
-									"value": "8"
+									"value": "1"
 								},
 								{
 									"key": "userID",
@@ -866,7 +930,7 @@
 							"variable": [
 								{
 									"key": "projectID",
-									"value": ""
+									"value": "10"
 								}
 							]
 						}
@@ -892,7 +956,7 @@
 							"variable": [
 								{
 									"key": "id",
-									"value": "31"
+									"value": "1"
 								}
 							]
 						}
@@ -1012,6 +1076,15 @@
 								}
 							]
 						}
+					},
+					"response": []
+				},
+				{
+					"name": "CREATE_NEW_RESERVATION",
+					"request": {
+						"method": "POST",
+						"header": [],
+						"url": "{{server}}/api/v1/reservationticket/createReservation"
 					},
 					"response": []
 				}
