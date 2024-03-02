@@ -83,13 +83,20 @@
 								},
 								{
 									"key": "openDate",
-									"value": "20/3/2024",
+									"value": "15/3/2024",
 									"description": "a date",
 									"type": "text"
 								},
 								{
 									"key": "reservationDate",
 									"value": "20/3/2024",
+									"description": "a date",
+									"type": "text"
+								},
+								{
+									"key": "closeDate",
+									"value": "21/3/2024",
+									"description": "a date",
 									"type": "text"
 								}
 							]
@@ -281,13 +288,20 @@
 								},
 								{
 									"key": "openDate",
-									"value": "20/3/2024",
+									"value": "15/3/2024",
 									"description": "a date",
 									"type": "text"
 								},
 								{
 									"key": "reservationDate",
 									"value": "20/3/2024",
+									"description": "a date",
+									"type": "text"
+								},
+								{
+									"key": "closeDate",
+									"value": "21/3/2024",
+									"description": "a date",
 									"type": "text"
 								}
 							]
