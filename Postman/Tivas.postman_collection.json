@@ -300,7 +300,7 @@
 								},
 								{
 									"key": "closeDate",
-									"value": "21/3/2024",
+									"value": "21/3/2025",
 									"description": "a date",
 									"type": "text"
 								}
@@ -574,6 +574,12 @@
 									"value": "5",
 									"description": "a number",
 									"type": "text"
+								},
+								{
+									"key": "bathrooms",
+									"value": "3",
+									"description": "a number",
+									"type": "text"
 								}
 							]
 						},
@@ -628,43 +634,37 @@
 									"key": "bedrooms",
 									"value": "1",
 									"description": "a number (not be null)",
-									"type": "text",
-									"disabled": true
+									"type": "text"
 								},
 								{
 									"key": "persons",
 									"value": "2",
 									"description": "a number (not be null)",
-									"type": "text",
-									"disabled": true
+									"type": "text"
 								},
 								{
 									"key": "size",
 									"value": "24",
 									"description": "a number (not be null)",
-									"type": "text",
-									"disabled": true
+									"type": "text"
 								},
 								{
 									"key": "bedTypes",
 									"value": "1 extra-large double bed or 2 single beds",
 									"description": "a string (not be null)",
-									"type": "text",
-									"disabled": true
+									"type": "text"
 								},
 								{
 									"key": "amenities",
 									"value": "Flat-screen TV,Air conditioning,Electric kettle",
 									"description": "a string",
-									"type": "text",
-									"disabled": true
+									"type": "text"
 								},
 								{
 									"key": "description",
 									"value": "This air-conditioned double room includes a flat-screen TV with cable channels, a private bathroom as well as a balcony with garden views. The unit offers 1 bed",
 									"description": "a string (not be null)",
-									"type": "text",
-									"disabled": true
+									"type": "text"
 								},
 								{
 									"key": "imagesDeleted",
@@ -679,6 +679,12 @@
 									"description": "1 to delete thumbnail",
 									"type": "text",
 									"disabled": true
+								},
+								{
+									"key": "bathrooms",
+									"value": "5",
+									"description": "a number",
+									"type": "text"
 								}
 							]
 						},
@@ -1055,7 +1061,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"userID\": 3 ,\r\n    \"code\": \"khEZ37\"\r\n}",
+							"raw": "{\r\n    \"userID\": 3,\r\n    \"code\": \"X3ZMkI\"\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1086,7 +1092,7 @@
 							"variable": [
 								{
 									"key": "id",
-									"value": "1"
+									"value": "3"
 								}
 							]
 						}
@@ -1098,7 +1104,25 @@
 					"request": {
 						"method": "POST",
 						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"code\":\"D2XfZP\",\r\n    \"timeShareID\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
 						"url": "{{server}}/api/v1/reservationticket/createReservation"
+					},
+					"response": []
+				},
+				{
+					"name": "CHECK_PRIORITY",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": "{{server}}/api/v1/reservationticket/checkPriority"
 					},
 					"response": []
 				}
