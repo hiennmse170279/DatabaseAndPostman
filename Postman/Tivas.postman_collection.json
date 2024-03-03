@@ -1040,7 +1040,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"userID\": 3,\r\n    \"projectID\": 1\r\n}",
+							"raw": "{\r\n    \"userID\": 5,\r\n    \"projectID\": 1\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1092,7 +1092,7 @@
 							"variable": [
 								{
 									"key": "id",
-									"value": "3"
+									"value": "4"
 								}
 							]
 						}
@@ -1106,7 +1106,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"code\":\"D2XfZP\",\r\n    \"timeShareID\": 1\r\n}",
+							"raw": "{\r\n    \"code\":\"bgTYZ8\",\r\n    \"timeShareID\": 2,\r\n    \"userID\": 3\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
