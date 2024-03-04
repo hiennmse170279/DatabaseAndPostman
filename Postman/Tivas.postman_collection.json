@@ -847,7 +847,7 @@
 							"variable": [
 								{
 									"key": "typeRoomID",
-									"value": "1"
+									"value": "7"
 								},
 								{
 									"key": "userID",
@@ -950,7 +950,7 @@
 							"variable": [
 								{
 									"key": "projectID",
-									"value": "10"
+									"value": "11"
 								}
 							]
 						}
@@ -1040,7 +1040,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"userID\": 5,\r\n    \"projectID\": 1\r\n}",
+							"raw": "{\r\n    \"userID\": 5,\r\n    \"projectID\": 9\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1092,7 +1092,7 @@
 							"variable": [
 								{
 									"key": "id",
-									"value": "4"
+									"value": "9"
 								}
 							]
 						}
@@ -1106,7 +1106,7 @@
 						"header": [],
 						"body": {
 							"mode": "raw",
-							"raw": "{\r\n    \"code\":\"bgTYZ8\",\r\n    \"timeShareID\": 2,\r\n    \"userID\": 3\r\n}",
+							"raw": "{\r\n    \"code\":\"aWlpLS\",\r\n    \"timeShareID\": 3,\r\n    \"userID\": 6\r\n}",
 							"options": {
 								"raw": {
 									"language": "json"
@@ -1120,9 +1120,62 @@
 				{
 					"name": "CHECK_PRIORITY",
 					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{server}}/api/v1/reservationticket/checkPriority/:id",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"reservationticket",
+								"checkPriority",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "9"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "OPEN_RESERVATION_TICKET",
+					"request": {
 						"method": "PUT",
 						"header": [],
-						"url": "{{server}}/api/v1/reservationticket/checkPriority"
+						"url": {
+							"raw": "{{server}}/api/v1/reservationticket/openReservationTicket/:id",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"reservationticket",
+								"openReservationTicket",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "8"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET_TIMESHARE_PRIORITY_BY_USER",
+					"request": {
+						"method": "GET",
+						"header": []
 					},
 					"response": []
 				}
