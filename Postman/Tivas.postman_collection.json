@@ -3,7 +3,8 @@
 		"_postman_id": "93677e02-8680-401d-8a7e-2668d819f891",
 		"name": "Tivas",
 		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
-		"_exporter_id": "29868473"
+		"_exporter_id": "29868473",
+		"_collection_link": "https://winter-astronaut-883320.postman.co/workspace/My-Workspace~cdf4c741-3100-4a6c-843f-a48a1101cf84/collection/29868473-93677e02-8680-401d-8a7e-2668d819f891?action=share&source=collection_link&creator=29868473"
 	},
 	"item": [
 		{
@@ -497,7 +498,7 @@
 					"response": []
 				},
 				{
-					"name": "OPEN_RESERVATION_TICKET Copy",
+					"name": "OPEN_RESERVATION_TICKET",
 					"request": {
 						"method": "PUT",
 						"header": [],
@@ -517,6 +518,33 @@
 								{
 									"key": "id",
 									"value": "9"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "OPEN_BOOKING",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{server}}/api/v1/project/openBooking/:id",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"project",
+								"openBooking",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": ""
 								}
 							]
 						}
@@ -1191,10 +1219,78 @@
 							"variable": [
 								{
 									"key": "userID",
+									"value": "6"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "GET_USER_TICKETS",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{server}}/api/v1/reservationticket/getUserTickets/:id",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"reservationticket",
+								"getUserTickets",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
 									"value": ""
 								}
 							]
 						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "Booking",
+			"item": [
+				{
+					"name": "REJECT_BOOKING",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userID\": 6,\r\n    \"timeShareID\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{server}}/api/v1/booking/rejectBooking"
+					},
+					"response": []
+				},
+				{
+					"name": "PAY_ADDITIONAL_BOOKING",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userID\": 6,\r\n    \"timeShareID\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{server}}/api/v1/booking/payAdditionalBooking"
 					},
 					"response": []
 				}
