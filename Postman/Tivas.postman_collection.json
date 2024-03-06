@@ -495,6 +495,33 @@
 						}
 					},
 					"response": []
+				},
+				{
+					"name": "OPEN_RESERVATION_TICKET Copy",
+					"request": {
+						"method": "PUT",
+						"header": [],
+						"url": {
+							"raw": "{{server}}/api/v1/project/openReservationTicket/:id",
+							"host": [
+								"{{server}}"
+							],
+							"path": [
+								"api",
+								"v1",
+								"project",
+								"openReservationTicket",
+								":id"
+							],
+							"variable": [
+								{
+									"key": "id",
+									"value": "9"
+								}
+							]
+						}
+					},
+					"response": []
 				}
 			]
 		},
@@ -1145,12 +1172,12 @@
 					"response": []
 				},
 				{
-					"name": "OPEN_RESERVATION_TICKET",
+					"name": "GET_TIMESHARE_PRIORITY_BY_USER",
 					"request": {
-						"method": "PUT",
+						"method": "GET",
 						"header": [],
 						"url": {
-							"raw": "{{server}}/api/v1/reservationticket/openReservationTicket/:id",
+							"raw": "{{server}}/api/v1/reservationticket/getTimeSharePriority/:userID",
 							"host": [
 								"{{server}}"
 							],
@@ -1158,24 +1185,16 @@
 								"api",
 								"v1",
 								"reservationticket",
-								"openReservationTicket",
-								":id"
+								"getTimeSharePriority",
+								":userID"
 							],
 							"variable": [
 								{
-									"key": "id",
-									"value": "8"
+									"key": "userID",
+									"value": ""
 								}
 							]
 						}
-					},
-					"response": []
-				},
-				{
-					"name": "GET_TIMESHARE_PRIORITY_BY_USER",
-					"request": {
-						"method": "GET",
-						"header": []
 					},
 					"response": []
 				}
