@@ -1,10 +1,10 @@
-INSERT INTO `images` (`id`, `pathUrl`, `pathName`, `projectID`, `typeRoomID`, `createdAt`, `updatedAt`) VALUES
+INSERT INTO `Images` (`id`, `pathUrl`, `pathName`, `projectID`, `typeRoomID`, `createdAt`, `updatedAt`) VALUES
 (1, 'https://res.cloudinary.com/tivas/image/upload/v1709102277/tivas_image/vuq9c15d2cftxfhdcb5w.jpg', 'tivas_image/vuq9c15d2cftxfhdcb5w', 1, NULL, '2024-02-28 13:38:00', '2024-02-28 13:38:00');
-INSERT INTO `images` (`id`, `pathUrl`, `pathName`, `projectID`, `typeRoomID`, `createdAt`, `updatedAt`) VALUES
+INSERT INTO `Images` (`id`, `pathUrl`, `pathName`, `projectID`, `typeRoomID`, `createdAt`, `updatedAt`) VALUES
 (2, 'https://res.cloudinary.com/tivas/image/upload/v1709102277/tivas_image/b3scty9xqvd9aiwxlfrr.jpg', 'tivas_image/b3scty9xqvd9aiwxlfrr', 1, NULL, '2024-02-28 13:38:00', '2024-02-28 13:38:00');
-INSERT INTO `images` (`id`, `pathUrl`, `pathName`, `projectID`, `typeRoomID`, `createdAt`, `updatedAt`) VALUES
+INSERT INTO `Images` (`id`, `pathUrl`, `pathName`, `projectID`, `typeRoomID`, `createdAt`, `updatedAt`) VALUES
 (3, 'https://res.cloudinary.com/tivas/image/upload/v1709102279/tivas_image/ecylmsaigoudhhhqbpao.jpg', 'tivas_image/ecylmsaigoudhhhqbpao', 1, NULL, '2024-02-28 13:38:00', '2024-02-28 13:38:00');
-INSERT INTO `images` (`id`, `pathUrl`, `pathName`, `projectID`, `typeRoomID`, `createdAt`, `updatedAt`) VALUES
+INSERT INTO `Images` (`id`, `pathUrl`, `pathName`, `projectID`, `typeRoomID`, `createdAt`, `updatedAt`) VALUES
 (4, 'https://res.cloudinary.com/tivas/image/upload/v1709102279/tivas_image/phuevmvduq7zlcre5hah.jpg', 'tivas_image/phuevmvduq7zlcre5hah', 1, NULL, '2024-02-28 13:38:00', '2024-02-28 13:38:00'),
 (5, 'https://res.cloudinary.com/tivas/image/upload/v1709102278/tivas_image/ijaaai0cbwpuyzfqdw7b.jpg', 'tivas_image/ijaaai0cbwpuyzfqdw7b', 1, NULL, '2024-02-28 13:38:00', '2024-02-28 13:38:00'),
 (6, 'https://res.cloudinary.com/tivas/image/upload/v1709102426/tivas_image/kwhvusjhtrpj80hqt5oy.jpg', 'tivas_image/kwhvusjhtrpj80hqt5oy', 2, NULL, '2024-02-28 13:40:29', '2024-02-28 13:40:29'),

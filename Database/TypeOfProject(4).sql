@@ -1,10 +1,10 @@
-INSERT INTO `typeofprojects` (`id`, `projectID`, `typeID`, `createdAt`, `updatedAt`) VALUES
+INSERT INTO `TypeOfProjects` (`id`, `projectID`, `typeID`, `createdAt`, `updatedAt`) VALUES
 (1, 1, 2, '2024-02-28 01:31:18', '2024-02-28 01:31:18');
-INSERT INTO `typeofprojects` (`id`, `projectID`, `typeID`, `createdAt`, `updatedAt`) VALUES
+INSERT INTO `TypeOfProjects` (`id`, `projectID`, `typeID`, `createdAt`, `updatedAt`) VALUES
 (2, 2, 2, '2024-02-28 01:35:38', '2024-02-28 01:35:38');
-INSERT INTO `typeofprojects` (`id`, `projectID`, `typeID`, `createdAt`, `updatedAt`) VALUES
+INSERT INTO `TypeOfProjects` (`id`, `projectID`, `typeID`, `createdAt`, `updatedAt`) VALUES
 (3, 3, 1, '2024-02-28 01:35:57', '2024-02-28 01:35:57');
-INSERT INTO `typeofprojects` (`id`, `projectID`, `typeID`, `createdAt`, `updatedAt`) VALUES
+INSERT INTO `TypeOfProjects` (`id`, `projectID`, `typeID`, `createdAt`, `updatedAt`) VALUES
 (4, 3, 2, '2024-02-28 01:35:57', '2024-02-28 01:35:57'),
 (5, 4, 2, '2024-02-28 01:36:33', '2024-02-28 01:36:33'),
 (6, 5, 1, '2024-02-28 01:37:00', '2024-02-28 01:37:00'),
