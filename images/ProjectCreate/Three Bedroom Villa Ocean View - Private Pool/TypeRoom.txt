@@ -1,0 +1,10 @@
+name: Three Bedroom Villa Ocean View - Private Pool
+bedrooms: 3
+persons: 6
+size: 370
+bedTypes: 2 single beds,1 extra-large double bed,1 extra-large double bed
+amenities: Air conditioning,Minibar,Wake-up service
+description: Villa rate is based on 6 adults. Villa can accommodate up to 6 adults and 6 children. Villa cannot accommodate any extra beds.
+type: Hotel
+quantity: 1
+bathrooms: 3
